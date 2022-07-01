@@ -1,0 +1,59 @@
+$layout-name: 'l-whatsapp';
+
+.#{$layout-name} {
+    width: 270px;
+    bottom: 4rem; //2rem
+    right: 2rem;
+    transition: all .6s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    border-radius: 8px;
+    position: fixed;
+    background-color: $color-folk-whatsapp;
+    z-index: 99999;
+
+    @media screen and (max-width: 991px) {
+        width: 220px;
+        right: 1rem;
+    }
+
+    // @media screen and (max-width: 991px) {
+    //     top: 10rem;
+    //     bottom: unset;
+    //     transform: translateX(100%);
+
+    //     &::after {
+    //         content: 'Adquira esse site';
+    //         top: 50%;
+    //         left: -36px;
+    //         transform: translateY(-50%) rotate(90deg);
+    //         position: absolute;
+    //         font-weight: 500;
+    //         color: $color-folk-white;
+    //     }
+
+    //     &.is-active {
+    //         @media screen and (max-width: 991px) {
+    //             transform: translateX(20%);
+    //         }
+    //     }
+    // }
+
+    &:hover {
+        background-color: #15A24A !important;
+    }    
+}
+
+.l-whatsapp-mobile {
+    bottom: 35rem;
+    right: 2rem;
+    position: fixed;
+    z-index: 999999;
+    color: $color-folk-whatsapp;
+
+    &::after {
+        content: '\f232';
+        padding-left: .5rem;
+        font-size: 4rem;
+        font-family: 'Font Awesome 5 Brands';
+    }
+}

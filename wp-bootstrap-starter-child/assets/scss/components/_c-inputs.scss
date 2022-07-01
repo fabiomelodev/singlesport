@@ -1,0 +1,16 @@
+$component-name: 'c-input';
+
+.#{$component-name} {
+    &-pattern {
+        width: 100%;
+        padding: .5rem 1rem;
+        border: 0 !important;
+        border-bottom: 4px solid rgba(0, 0, 0, .8) !important;
+
+        &::placeholder {
+            font-size: .875rem;
+            font-weight: 300;
+            font-style: italic;
+        }
+    }
+}

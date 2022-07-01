@@ -1,0 +1,13 @@
+$layout-name: 'l-footer';
+
+.#{$layout-name} {
+    background-color: #160224;
+
+    &__dev {
+        opacity: .4;
+    }
+    
+    &__copyright {  
+        opacity: .4;
+    }
+}

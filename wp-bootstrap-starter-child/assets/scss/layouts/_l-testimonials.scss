@@ -1,0 +1,36 @@
+$layout-name: 'l-testimonials';
+
+.#{$layout-name} {
+    &__col-child {
+        &:nth-of-type(odd) {
+            .#{$layout-name} {
+                &__box {
+                    background-color: $color-folk-purple;
+                }
+            }
+        }
+
+        &:nth-of-type(even) {
+            .#{$layout-name} {
+                &__box {
+                    background-color: $color-folk-pink;
+                }
+            }
+        }
+    }
+
+    &__box {
+        display: flex;
+        border-radius: 24px;
+    }
+
+    &__rounded {
+        width: 80px;
+        height: 80px;
+        padding: .5rem;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        background-color: rgba(0, 0, 0, .4);
+    }
+}

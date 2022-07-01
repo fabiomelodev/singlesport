@@ -1,0 +1,26 @@
+$component-name: 'c-title';
+
+.#{$component-name} {
+    padding-bottom: .5rem;
+    position: relative;
+    font-size: 1.875;
+    font-weight: 800;
+
+    &::before,
+    &::after {
+        content: '';
+        height: 6px;
+        top: 100%;
+        position: absolute;
+        background-color: $color-folk-black;
+    }
+
+    &::before {
+        width: 98px;
+    }
+
+    &::after {
+        width: 6px;
+        left: 102px;
+    }
+}

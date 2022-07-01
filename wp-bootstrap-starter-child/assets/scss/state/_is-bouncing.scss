@@ -1,0 +1,52 @@
+@keyframes is-bouncing {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(20%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes before-is-bouncing {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(20%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+%is-bouncing {
+    animation: is-bouncing 2s linear infinite;
+}
+
+.is-bouncing {
+    animation: is-bouncing 2s linear infinite !important;
+}
+
+
+%before\:\: {
+    &is-bouncing {
+        &::before {
+            animation: before-is-bouncing 2s linear infinite !important;
+        }
+    }
+}
+
+.before\:\: {
+    &is-bouncing {
+        &::before {
+            animation: before-is-bouncing 2s linear infinite !important;
+        }
+    }
+}

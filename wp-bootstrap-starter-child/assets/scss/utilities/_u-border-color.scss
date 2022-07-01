@@ -1,0 +1,11 @@
+$utility-name: 'u-border-color';
+
+.#{$utility-name} {
+    &-purple {
+        border-color: $color-folk-purple;
+    }
+
+    &-white {
+        border-color: $color-folk-white;
+    }
+}

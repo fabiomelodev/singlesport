@@ -1,0 +1,65 @@
+$layout-name: 'l-social-media';
+
+.#{$layout-name} {
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        width: 36px;
+        height: 36px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            position: absolute;
+            background-color: $color-folk-black;
+        }
+
+        &:hover {
+            &::before {
+                opacity: .4;
+            }
+        }
+    }
+
+    &__link {
+        font-size: 0;
+
+        &::before {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            font-size: 1.2rem;
+            font-family: 'Font Awesome 5 Brands';
+            color: $color-folk-white;
+        }
+    }
+
+    &__facebook {
+        &::before {
+            content: '\f082';
+        }
+    }
+
+    &__instagram {
+        &::before {
+            content: '\f16d';
+        }
+    }
+
+    &__whatsapp {
+        &::before {
+            content: '\f232';
+        }
+    }
+}

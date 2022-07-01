@@ -1,0 +1,15 @@
+$layout-name: 'l-contact';
+
+.#{$layout-name} {
+    background-color: #EBEBEB;
+    
+    &__text {
+        font-size: .875rem;
+        color: rgba(0, 0, 0, .7);
+    }
+
+    &__title {
+        font-size: 1.625rem;
+        color: rgba(0, 0, 0, .7);
+    }
+}

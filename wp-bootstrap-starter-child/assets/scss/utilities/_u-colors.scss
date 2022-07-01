@@ -1,0 +1,41 @@
+$utility-name: 'u-color-folk';
+
+.#{$utility-name} {
+    &-blue {
+        color: $color-folk-blue !important;
+    }
+    
+    &-light-black {
+        color: $color-folk-light-black !important;
+    }
+
+    &-purple {
+        color: $color-folk-purple !important;
+    }
+
+    &-whatsapp {
+        color: $color-folk-whatsapp !important;
+    }
+
+    &-white {
+        color: $color-folk-white !important;
+    }
+}
+
+.hover {
+    &\: {
+        &#{$utility-name} {
+            &-purple {
+                &:hover {
+                    color: $color-folk-purple;
+                }
+            }
+
+            &-white {
+                &:hover {
+                    color: $color-folk-white;
+                }
+            }
+        }
+    }
+}

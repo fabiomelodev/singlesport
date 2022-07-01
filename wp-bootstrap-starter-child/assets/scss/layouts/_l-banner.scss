@@ -1,0 +1,15 @@
+$layout-name: 'l-banner';
+
+.#{$layout-name} {
+    height: 750px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media screen and (max-width: 991px) {
+        height: 450px;
+    }
+
+    &__title {
+        font-size: 3.375rem;
+    }
+}

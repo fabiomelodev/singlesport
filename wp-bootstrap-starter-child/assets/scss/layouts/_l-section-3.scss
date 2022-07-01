@@ -1,0 +1,13 @@
+$layout-name: 'l-section-3';
+
+.#{$layout-name} {
+    background-image: url(../images/section-3-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__card-img {
+        width: 50px !important;
+        height: 50px;
+        overflow: hidden;
+    }
+}

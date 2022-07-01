@@ -1,0 +1,25 @@
+$utility-name: 'u-sprite';
+
+.#{$utility-name} {
+    background-image: url(../images/sprite.jpg);
+
+    &-focus {
+        background-position-x: -2px;
+        background-position-y: -56px;
+    }
+
+    &-performance {
+        background-position-x: -112px;
+        background-position-y: -110px;
+    }
+
+    &-force {
+        background-position-x: -222px;
+        background-position-y: -56px;
+    }
+
+    &-subject {
+        background-position-x: -57px;
+        background-position-y: 0;
+    }
+}

@@ -1,0 +1,63 @@
+$layout-name: 'l-section-1';
+
+.#{$layout-name} {
+    &__card {
+        &:hover {
+            .#{$layout-name} {
+                &__thumbnail {
+                    transform: scale(1.2);
+                }
+
+                &__overlay {
+                    &::before {
+                        opacity: .4;
+                        visibility: visible;
+                    }
+
+                    &::after {
+                        top: 50%;
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+    }
+
+    &__thumbnail {
+        transition: all .2s;
+    }
+
+    &__overlay {
+        &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            transition: all .6s;
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            background-color: #000000;
+            z-index: 999;
+        }
+
+        &::after {
+            content: attr(data-value);  
+            padding: .5rem 1rem;
+            top: 15%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: all .2s;
+            opacity: 0;
+            visibility: hidden;
+            border: 1px solid #FFF;
+            border-radius: 4px;
+            position: absolute;
+            font-weight: 600;
+            color: #FFF;
+            z-index: 9999;
+        }   
+    }
+}
